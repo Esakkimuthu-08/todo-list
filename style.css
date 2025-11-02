@@ -1,0 +1,115 @@
+:root {
+    --bg: #fff;
+    --text:#111;
+    --list-bg: rgb(197, 169, 169);
+}
+
+.dark{
+    --bg:#111;
+    --text:#fff;
+    --list-bg: gray;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+.tilte_container {
+    background-color: blue;
+    color: var(--bg);
+    font: bolder;
+    font-weight: bolder;
+    font-size: larger;
+    text-align: center;
+}
+
+.input_tag {
+    outline: none;
+    border-radius: 4px;
+    text-align: start;
+    align-items: flex-start;
+    background-color: var(--bg);
+    color:var(--text);
+    width: 30%;
+    height: 95px;
+    margin-bottom: 15px;
+
+}
+
+.input_container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px 30px 0px;
+}
+
+#add_button {
+    font-size: medium;
+    outline: none;
+    padding: 8px 30px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    background-color: blue;
+    color: var(--bg);
+}
+
+.add_button:hover {
+    color: blue;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.lists_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 30px 0px;
+    width: 100%;
+
+}
+
+.lists li {
+    list-style: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+.lists {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: fit-content;
+    gap: 5px;
+    background-color:var(--list-bg);
+    border-radius: 20px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(5, 238, 44);
+}
+
+
+.lists button {
+    outline: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0px 3px;
+
+}
